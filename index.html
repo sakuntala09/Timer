@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+</head>
+<link rel="stylesheet" href="./style.css">
+
+<body>
+
+    <div id="timer-box">
+
+        <div id="timer">
+            <h1 id="display">00:00:00</h1>
+        </div>
+
+
+        <div id="header">
+            <input type="number" id="minuteInput">
+            <button id="start" onclick="startTimer()">Start</button>
+
+        </div>
+        <div id="buttons">
+            <button id="stop" onclick="pauseTimer()">Pause</button>
+            <button id="reset" onclick="resetTimer()">Reset</button>
+        </div>
+
+        <!-- <footer id="footer">Value your time!!</footer> -->
+    </div>
+    <script src="./timer.js"></script>
+</body>
+
+</html> 
