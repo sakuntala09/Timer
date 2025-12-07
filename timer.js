@@ -2,6 +2,7 @@ let timerInterval;
 let totalSeconds = 0;
 let isPaused = false;
 
+const alarmSound=new Audio("alarm.mp3");
 const display = document.getElementById("display");
 const minuteInput = document.getElementById("minuteInput");
 
@@ -49,6 +50,7 @@ function startTimer() {
       if (totalSeconds <= 0) {
         clearInterval(timerInterval);
         timerInterval = null;
+        alarmSound.play();
         alert("⏰ Time's up!");
       }
     }
@@ -76,6 +78,9 @@ function resetTimer() {
   timerInterval = null;
   totalSeconds = 0;
   updateDisplay();
+
+  alarmSound.pause();
+  alarmSound.currentTime = 0;
 }
  
 const { ipcRenderer } = require("electron");
