@@ -78,3 +78,13 @@ function resetTimer() {
   updateDisplay();
 }
  
+const { ipcRenderer } = require("electron");
+
+document.getElementById("minimize").addEventListener("click", () => {
+  ipcRenderer.send("minimize-app");
+});
+
+document.getElementById("close").addEventListener("click", () => {
+  ipcRenderer.send("close-app");
+});
+
