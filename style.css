@@ -1,21 +1,42 @@
 
+#head{
+    margin-bottom: 5px;
+    color:#fa3063
+}
 h1{
     color:pink;
 }
 
 #timer{
-    color: rgb(254, 132, 153);
+    height:27px;
+    color: pink;
+    background-color: #fa8ea9;
     margin: auto;
-    
-    margin-top: 10px;
-    box-shadow: 3px 4px 5px;
+    margin-right: 20px;
+    margin-top: 0px;
+    align-items:center ;
+    justify-content:space-between;
+    padding: 0px;
+    box-shadow: 2px 2px 2px 2px rgb(249, 110, 133);
     border-radius: 5px;
    
 }
-#timer-box{
 
+h2#display {
+    color: #fff;
+    height: 20px;
+    width: 130px;
+    padding-bottom: 8px;
+    
+}
+
+
+#timer-box{
+    
     width:200px;
     height: 250px;
+    background: #ffb3c6;
+    -webkit-app-region: drag;
     border-radius: 5px;
     margin:auto;
     box-shadow:0 4px 10px ;
@@ -27,6 +48,26 @@ h1{
     text-align: center;
 }
 
+.window-controls {
+  display: flex;
+  /* align-items: center;
+  justify-content: end; */
+  gap: 2px;
+  -webkit-app-region: no-drag;
+}
+
+.window-controls button {
+  border: none;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+}
+
+.window-controls button:hover {
+  background: #fa8ea9;
+}
+
 #buttons{
     /* justify-content: center; */
     align-items: flex-end;
@@ -36,7 +77,8 @@ h1{
     
 }
 #header{
-    margin-top: 67%;
+    
+    margin-top: 79%;
     margin-left: 10px;
     margin-bottom: 2px;
     display: flexbox;
@@ -45,18 +87,20 @@ h1{
     padding: 0;
 
 }
+
+
 #minuteInput{
     
     display:inline;
     width: 40px;
-    height: 25px;
+    height: 20px;
     border-radius: 5px;
     border-style: none;
     box-shadow: 2px 2px 2px 2px pink;
 }
 
 #start, #stop , #reset  ,#set-timer{
-    
+    height: 23px;
     margin-top:0px;
     margin-left:6px;
     margin-bottom: 4px;
