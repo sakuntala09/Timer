@@ -111,7 +111,24 @@ h2#display {
     box-shadow: 2px 2px 2px rgb(249, 110, 133);
 }
 
+#stop:hover{
+    background-color:#fa8ea9;
+    color:#fff;
+    font-style: italic;
+}
+ #reset:hover{
+    background-color:#fa8ea9;
+    color:#fff;
+    font-style: italic;
+}
+ #start:hover{
+    background-color:#fa8ea9;
+    color:#fff;
+    font-style: italic;
+}
+
 #footer{
     padding-top: 12px;
     padding-left: 25px;
 } 
+
